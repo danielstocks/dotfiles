@@ -6,4 +6,7 @@ alias vimrc='vim ~/.vimrc'
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
-PS1='\W \e[0;31m$(__git_ps1 "(%s)")\e[m 💰 '
+# FZF
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+PS1='\W$(__git_ps1 " (%s)") \$ '

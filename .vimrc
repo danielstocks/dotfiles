@@ -49,13 +49,14 @@ nnoremap <leader><space> :noh<cr>
 
 " NerdTree bindings
 nmap <Leader><Tab> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 
 " Allow file undo after close
 set undofile
-set backupdir=~/.vimtmpdir,.
-set directory=~/.vimtmpdir,.
-set undodir=~/.vimtmpdir,.
+set backupdir=~/.vim/tmp,.
+set directory=~/.vim/tmp,.
+set undodir=~/.vim/tmp,.
 
 
 " Sanity
