@@ -8,7 +8,7 @@
 
 ## Setup Git
 
-And then clone this repo
+Setup SSH keys, and then clone this repo
 
 ## Install binaries
 
