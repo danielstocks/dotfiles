@@ -3,10 +3,16 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 alias gs='git status'
 alias vimrc='vim ~/.vimrc'
-source ~/.git-completion.bash
-source ~/.git-prompt.sh
 
 # FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-PS1='\W$(__git_ps1 " (%s)") \$ '
+# Git
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWCOLORHINTS=true
+export GIT_PS1_SHOWDIRTYSTATE=true
+export PROMPT_COMMAND='\W$(__git_ps1 " (%s)") \$ '
+
+export PROMPT_COMMAND='__git_ps1 "\W" " "'
