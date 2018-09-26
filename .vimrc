@@ -80,7 +80,7 @@ set expandtab
 
 
 " Link to ubuntu/gui clipboard
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 
 " Invisibles

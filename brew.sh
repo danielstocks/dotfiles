@@ -47,3 +47,7 @@ $(brew --prefix)/opt/fzf/install
 # Remove outdated versions from the cellar.
 brew cleanup
 
+
+# for copy/paste integration with terminal/tmux
+# https://github.com/tmux/tmux/issues/543
+brew install reattach-to-user-namespace
