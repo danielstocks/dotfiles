@@ -1,26 +1,36 @@
-#!/usr/bin/env bash
+#!/bin/bash
+############################
+# .make.sh
+# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+############################
 
-cd "$(dirname "${BASH_SOURCE}")";
+########## Variables
 
-function doIt() {
-	rsync --exclude ".git/" \
-		--exclude ".DS_Store" \
-		--exclude ".osx" \
-		--exclude "README.md" \
-		--exclude "bootstrap.sh" \
-		--exclude "brew.sh" \
-		--exclude "LICENSE-MIT.txt" \
-		-avh --no-perms . ~;
-	source ~/.bash_profile;
-}
+dir=~/Projects/dotfiles
+olddir=~/dotfiles_old
+files=".bash_profile .editorconfig .git-completion.bash .git-prompt.sh .hgignore .hushlogin .tmux.conf .vimrc"
 
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	doIt;
-else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
-	echo "";
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		doIt;
-	fi;
-fi;
-unset doIt;
+##########
+
+# create dotfiles_old in homedir
+echo "Creating $olddir for backup of any existing dotfiles in ~"
+mkdir -p $olddir
+echo "...done"
+
+# change to the dotfiles directory
+echo "Changing to the $dir directory"
+cd $dir
+echo "...done"
+
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
+for file in $files; do
+    echo "Moving any existing dotfiles from ~ to $olddir"
+    mv ~/$file ~/dotfiles_old/
+    echo "Creating symlink to $file in home directory."
+    ln -s $dir/$file ~/$file
+done
+
+# Only copy the original .vim folder, treat it like you would node_modules
+cp -R $dir/.vim ~/.vim
+
+source ~/.bashrc
