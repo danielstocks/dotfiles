@@ -34,7 +34,6 @@ This will symlink all the important files to your ~
 Run `PlugInstall!` in Vim
 
 
-## Colors
-Get some nice terminal colors, eg:
-
-base16-yesterday.dark.256.terminal
+## Colors and Typography
+color: base16-yesterday.dark.256.terminal
+font: Using input Monto Light 14 pt
