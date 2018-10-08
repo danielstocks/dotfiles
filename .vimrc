@@ -88,7 +88,7 @@ set clipboard=unnamed
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 set list
-set listchars=nbsp:¬,tab:>-,extends:»,precedes:«,trail:•
+set listchars=nbsp:¬,tab:--,extends:»,precedes:«,trail:•
 
 
 " Theming maddness
