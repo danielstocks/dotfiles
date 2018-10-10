@@ -43,6 +43,7 @@ brew install screen
 brew install fzf
 brew install tmux
 $(brew --prefix)/opt/fzf/install
+brew install the_silver_searcher
 
 # Remove outdated versions from the cellar.
 brew cleanup
