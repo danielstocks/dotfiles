@@ -34,6 +34,7 @@ nmap <Leader>f :Files<CR>
 nmap <Leader>t :Tags<CR>
 nmap <Leader>a :Ag<CR>
 nmap <Leader>b :Buffers<CR>
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 
 " Searching and stuff
