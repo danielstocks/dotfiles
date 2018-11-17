@@ -6,7 +6,7 @@
 
 ########## Variables
 
-dir=~/Projects/dotfiles
+dir=~/Projects/private/dotfiles
 olddir=~/dotfiles_old
 files=".bash_profile .editorconfig .git-completion.bash .git-prompt.sh .hgignore .hushlogin .tmux.conf .vimrc"
 
