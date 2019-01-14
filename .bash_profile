@@ -5,6 +5,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # Shortcuts
 alias ls='ls -GFh'
 alias gs='git status'
+alias gpo='git push -u origin HEAD'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bash_profile'
 alias tmuxrc='vim ~/.tmux.conf'
