@@ -52,3 +52,6 @@ brew cleanup
 # for copy/paste integration with terminal/tmux
 # https://github.com/tmux/tmux/issues/543
 brew install reattach-to-user-namespace
+
+# Enabled preview of JSON files in OSX preview
+brew cask install quicklook-json
