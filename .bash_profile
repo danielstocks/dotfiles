@@ -9,6 +9,8 @@ alias gpo='git push -u origin HEAD'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bash_profile'
 alias tmuxrc='vim ~/.tmux.conf'
+alias vim="vi"
+
 
 # FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
@@ -26,3 +28,5 @@ export PROMPT_COMMAND='__git_ps1 "\W" " "'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
