@@ -19,6 +19,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier', {
