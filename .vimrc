@@ -109,3 +109,7 @@ hi StatusLineNC ctermfg=black ctermbg=white
 " These options are required for colours
 " to display properly when running vim in tmux
 set background=dark
+
+
+" Enable spellcheck for markdown and mdx files
+autocmd BufRead,BufNewFile *.md* setlocal spell
