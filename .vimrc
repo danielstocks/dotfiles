@@ -39,6 +39,15 @@ nmap <Leader>b :Buffers<CR>
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 
+" Gutter
+set foldcolumn=2
+highlight FoldColumn ctermbg=0
+
+
+" Hide the tilde characters for blank lines
+highlight EndOfBuffer ctermfg=0
+
+
 " Searching and stuff
 nnoremap / /\v
 vnoremap / /\v
@@ -64,7 +73,7 @@ set undodir=~/.vim/tmp,.
 
 
 " Sanity
-set number
+" set number
 set encoding=utf-8
 set backspace=2
 set ruler
