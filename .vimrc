@@ -41,11 +41,15 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 " Gutter
 set foldcolumn=2
-highlight FoldColumn ctermbg=0
+hi FoldColumn ctermbg=0
 
 
 " Hide the tilde characters for blank lines
-highlight EndOfBuffer ctermfg=0
+hi EndOfBuffer ctermfg=0
+
+
+" hightlight Selection
+hi Visual ctermfg=black ctermbg=lightgray
 
 
 " Searching and stuff
@@ -73,7 +77,7 @@ set undodir=~/.vim/tmp,.
 
 
 " Sanity
-" set number
+set nonumber
 set encoding=utf-8
 set backspace=2
 set ruler
@@ -91,6 +95,8 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+" hide color column
+hi ColorColumn ctermbg=0
 
 " Link to ubuntu/gui clipboard
 set clipboard=unnamed
