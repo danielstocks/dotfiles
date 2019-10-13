@@ -20,7 +20,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'plasticboy/vim-markdown'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'junegunn/limelight.vim'
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier', {
@@ -127,4 +129,13 @@ set background=dark
 
 
 " Enable spellcheck for markdown and mdx files
-autocmd BufRead,BufNewFile *.md* setlocal spell
+autocmd BufRead,BufNewFile *.md* setlocal spell textwidth=80 linebreak
+
+" Disable markdown folding
+let g:vim_markdown_folding_disabled = 1
+
+
+" Color name (:help cterm-colors) or ANSI code
+let g:limelight_conceal_ctermfg = 8
+
+
