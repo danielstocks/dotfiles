@@ -138,4 +138,7 @@ let g:vim_markdown_folding_disabled = 1
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 8
 
+" Toggle limelight
+nmap <Leader>l :Limelight!!<CR>
+
 
