@@ -35,5 +35,6 @@ Run `PlugInstall!` in Vim
 
 
 ## Colors and Typography
-color: base16-yesterday.dark.256.terminal
-font: Using input Monto Light 14 pt
+
+- Color Scheme: base16-yesterday.dark.256.terminal
+- font: Input Monto Light 14 pt
