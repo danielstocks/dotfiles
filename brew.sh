@@ -30,10 +30,8 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
 # Install more recent versions of some macOS tools.
+brew install wget
 brew install vim
 brew install grep
 brew install openssh
