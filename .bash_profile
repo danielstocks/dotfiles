@@ -5,6 +5,8 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # Shortcuts
 alias ls='ls -GFh'
 alias gs='git status'
+alias gp='git push'
+alias gb='git branch'
 alias gpo='git push -u origin HEAD'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bash_profile'
