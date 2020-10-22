@@ -29,7 +29,7 @@ Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
+  \ 'for': ['javascript', 'yaml', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
 
 call plug#end()
 " Plug end
